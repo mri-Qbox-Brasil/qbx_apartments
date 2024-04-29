@@ -18,6 +18,7 @@ local function openHouseAnim()
     TaskPlayAnim(cache.ped, 'anim@heists@keycard@', 'exit', 5.0, 1.0, -1, 16, 0, false, false, false)
     Wait(400)
     StopAnimTask(cache.ped, 'anim@heists@keycard@', 'exit', 1.0)
+    RemoveAnimDict('anim@heists@keycard@')
 end
 
 local function showEntranceHeaderMenu(id)
